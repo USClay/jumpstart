@@ -13,6 +13,10 @@ html {
   box-sizing: inherit;
   }
 
+/*.image-container {
+  overflow: hidden;
+}*/
+
 /*===Nav Bar===*/
 
 .navbar-default .navbar-nav > .active > a {
@@ -30,8 +34,10 @@ html {
 .jumbotron {
   background-image: url(../images/jumbotron-bike.jpg);
   background-size: cover;
+  background-position: center;
   padding-top: 11.85rem;
   padding-bottom: 11.85rem;
+  width: 100%;
 }
 
 .jumbotron h1 {
@@ -56,4 +62,41 @@ html {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+/*===Featured Project Section===*/
+
+#featured-project h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  /*padding-bottom: 20px;*/
+  color: #399bd1;
+}
+
+#featured-image {
+  /*height: 19rem;*/
+  margin-top: 20px;
+}
+#documentary h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#product-category h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #399bd1;
+}
+
+/*===Media Queries===*/
+
+@media only screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+
+  }
+
+  .jumbotron p {
+    width: 80%;
+  }
 }
